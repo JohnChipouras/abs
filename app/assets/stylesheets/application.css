@@ -16,6 +16,7 @@
 
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -239,3 +240,19 @@ p.year {
   .movie, .actor {
     width: calc(50% - 10px);
   }
+
+  .info {
+    margin: 0 0 0 20px;
+    width: calc(100% - 204px);
+  }
+
+  .movie-show .movie h3, .actor-show .actor h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .movie a,
+  .actor a {
+    font-size: 14px;
+  }
+}
