@@ -1,0 +1,19 @@
+<div class="hero">
+  <div class="container">
+    <h2>Astronaut Abs</h2>
+    <p>Yeah you know Matthew McConaughey he does abs... Probably. Anyways use this site to get out of this world abs.</p>
+    <a href="#">Read More</a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+  <h2>Popular Workouts</h2>
+    <% @categories.each do |c| %>
+    <div class="movie">
+      <%= image_tag c.image %>
+      <h3><%= c.title %></h3>
+    </div>
+    <% end %>
+  </div>
+</div>
