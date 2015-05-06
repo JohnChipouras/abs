@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Astronaut Abs</h2>
     <p>Yeah you know Matthew McConaughey he does abs... Probably. Anyways use this site to get out of this world abs.</p>
-    <a href="#">Read More</a>
+    <a href= "categories/1" >try it out</a>
   </div>
 </div>
 
@@ -13,6 +13,7 @@
     <div class="movie">
       <%= image_tag c.image %>
       <h3><%= c.title %></h3>
+      <%= link_to "Try it out", category_path(c) %>
     </div>
     <% end %>
   </div>

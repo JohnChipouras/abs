@@ -1,0 +1,24 @@
+<div class="main movie-show">
+  <div class="container">
+    <div class="movie">
+      
+      <!-- Display the movie's info here -->
+      <div class="info">
+        <%= image_tag @category.image %>
+        <h3 class="movie-title"><%= @category.title %></h3>
+      </div>
+    </div>
+
+    <h2>Exercises</h2>
+    <% @exercises.each do |e| %>
+    <div class="actor">
+      <h3 class="actor-name"><%= e.title %> </h3>
+      <%= link_to "description of exercise", exercise_path(e) %>
+      <%= e.duration %>
+      
+      <!-- come back and fix this line so video displays properly 
+      <p class="actor-bio"><%= video_tag( e.video ) %></p>-->
+    </div>
+		<% end %>
+  </div>
+</div>

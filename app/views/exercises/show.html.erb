@@ -1,0 +1,25 @@
+<div class="main actor-show">
+  <div class="container">
+    
+    <!-- Display an actor's info here -->
+    <div class="actor">
+    
+      <h3 class="actor-name">
+      
+      <%= @exercise.title %><br></h3>
+      <h2 class="actor-name">
+         <%= @exercise.description %></h2>
+        <p><%= video_tag @exercise.video %> </p>
+      </div>
+    </div>
+
+   <!-- 
+    <% @categories.each do |c| %>
+    <div class="movie">
+      <%= image_tag c.image %>
+      <h3 class="movie-title"><%= c.title %></h3>
+    </div>
+    <% end %>
+-->
+  </div>
+</div>

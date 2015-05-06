@@ -1,0 +1,13 @@
+<div class="main actor-index">
+      <div class="container">
+        <div class="row">
+          <% @exercises.each do |e| %>
+          <div class="actor col-xs-2">
+            <h3><%= e.title %><br><br>
+            <%= e.description %></h3>
+            <%= link_to "Learn more", exercise_path(e) %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+</div>
