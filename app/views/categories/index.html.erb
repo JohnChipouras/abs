@@ -12,9 +12,14 @@
   <h2>Popular Workouts</h2>
     <% @categories.each do |c| %>
     <div class="movie">
-      <%= image_tag c.image %>
-      <h3><%= c.title %></h3>
-      <%= link_to "Try it out", category_path(c) %>
+    <div id="header">
+      <%= image_tag c.image %> 
+      </div> 
+      <div id="header-content">
+        <h3><%= c.title %></h3>
+        <%= link_to "Try it out", category_path(c) %>
+      </div>
+      
     </div>
     <% end %>
   </div>

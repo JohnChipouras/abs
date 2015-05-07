@@ -14,6 +14,17 @@
  *= require_self
  */
 
+  #header {
+    position: relative;
+    min-height: 150px;
+    width: 150px;
+    height: 300px;
+  }
+  #header-content {
+    position: absolute;
+    bottom: 50;
+    
+  }
 
 .dirp {
    /* Fallback for web browsers that don't support RGBa */
