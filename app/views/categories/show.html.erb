@@ -12,12 +12,15 @@
     <h2>Exercises</h2>
     <% @exercises.each do |e| %>
     <div class="actor">
-      <h3 class="actor-name"><%= e.title %> </h3>
+      <h3 class="actor-name">
+      <%= e.title %> <br> 
+      <h4 style="color:white"> Duration: 1 min<br> Rest: 20 seconds  </h4>
+      </h3>
+      
       <%= link_to "description of exercise", exercise_path(e) %>
-      <%= e.duration %>
       
       <!-- come back and fix this line so video displays properly 
-      <p class="actor-bio"><%= video_tag( e.video ) %></p>-->
+      <p class="actor-bio"><%= video_tag( e.video ) %></p> <%= e.duration %>-->
     </div>
 		<% end %>
   </div>

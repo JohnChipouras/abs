@@ -3,7 +3,7 @@ class CreateExercises < ActiveRecord::Migration
     create_table :exercises do |t|
       t.string :title
       t.string :description
-      t.time :duration
+      t.float :duration
       t.string :video
       t.timestamps null: false
     end
